@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#services {
+    margin: 1px;
+    display: flex;
+
+
+}
+
+#services .box {
+    
+    padding: 40px;
+   
+    margin-left: 10px;
+    margin-right: 20px;
+    font-family: 'Chilanka';
+    margin-bottom: 20px;
+
+
+}
+
+#services img {
+
+    display: block;
+    margin: auto;
+    padding: 10px;
+
+
+}
+.button{
+    padding: 8px 25px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    
+    background-color: rgba(0, 255, 149, 0.575);
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 17px;
+    align-items: center;
+    
+  text-align:center;
+
+}
+
+.button:hover {
+    background-color: rgba(90, 248, 182, 0.575);
+    color: black;
+    
+}
+
+.box-area{
+    width: 930px;
+}
+/*------------ Right box ------------*/
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+/*------------ Custom Placeholder ------------*/
+::placeholder{
+    font-size: 16px;
+}
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* currently 2, change to any number of columns */
+    grid-row-gap: 20px;  
+  }
+  
+  .item {
+    
+    background: rgb(0, 255, 149);
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .sep:before {
+    content: '';
+    height: 40px;
+    position: relative;
+    border-left: 1px solid black;
+  }
+  .circle {
+    width: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    border: 3px solid #000;
+   display:inline-block;
+    background-color:white;
+    
+  }
+  .circle1{
+    margin-top: 60px;
+    background-color: black;
+   text-align: center;
+   padding: 10px;
+  }
+  #page3 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #000; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+  #page3 > p {
+    font-size: 35px;
+    font-weight: 700;
+    width: 60%;
+    line-height: 45px;
+    text-align: center;
+  }
+  
+  #page3 img {
+    position: absolute;
+    height: 60px;
+  }
+  #page3 #colon1 {
+    left: 15%;
+    top: 25%;
+  }
+  #page3 #colon2 {
+    bottom: 30%;
+    right: 15%;
+  }
+  #client-section {
+
+    position: relative;
+    padding: 20px;
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    /* background: url('https://images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg'); */
+    width: 100%;
+    height: 94%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* text-align: center; */
+
+
+}
+
+#client img {
+    height: 60px;
+
+}
+
+.client-item {
+    padding: 40px;
+}
+
+.h-primary {
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+  .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+#services {
+  flex-direction: column;
+  margin: 1px;
+  display: flex;
+}
+.grid{
+  padding: 20px;
+}
+.circle {
+  width: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  border: 3px solid #000;
+ display:inline-block;
+  background-color:white;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+#page3 {
+  height: 50vh;
+  width: 100%;
+  /* background-color: #000; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+#page3 > p {
+  font-size: 8px;
+    font-weight: 700;
+    width: 60%;
+    line-height: 20px;
+    text-align: center;
+}
+#page3 img {
+  position: absolute;
+  height: 30px;
+}
+.client-item {
+  padding: 20px;
+}
+#client img {
+  height: 20px;
+}
+}
+
+
